@@ -20,4 +20,14 @@ header{
     box-shadow: 0px 0xp 25px rgb(197, 197, 211);
     border-radius: 20px;
     padding: 10px;
+    display: flex;
+}
+header .male, .cal, .female {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
