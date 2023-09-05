@@ -34,3 +34,38 @@ header .male, .cal, .female {
 header img{
     width: 200px;
 }
+header .speed{
+    display: inline-block;
+    position: relative;
+    height: 57px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+header .speed .speedmeter{
+    width: 115px;
+    height: 115px;
+    border-top: 13px solid #000;
+    border-left: 13 px solid #000;
+    border-left: 13 px solid #fff;
+    border-left: 13 px solid #fff;
+    border-radius: 100%;
+    transform: rotate(45deg);
+    display: flex;
+    box-shadow: inset 0px 0px 20px gray;
+    transition: all 5s; 
+}
+header .speed .needle{
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    background: linear-gradient(45deg, transparent, #000);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100%;
+    top: 25px;
+    left: 50px;
+    display: inline-block;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
