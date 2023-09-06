@@ -26,7 +26,7 @@ header .male, .cal, .female {
     position: relative;
     width: 33.33%;
     height: 100%;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,4 +114,28 @@ header .cal .card input{
     margin-top: 5px;
     border-radius: 5px;
     box-shadow: inset 0px 0px 20px gray;
+}
+header .cal .btns{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+header .cal .btns button{
+    width: 100px;
+    padding: 10px 0px;
+    margin: 0px 5px;
+    background: greenyellow;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 1s linear;
+}
+header .cal .btns button:nth-child(2){
+    background: #000;
+    color: #fff;
+}
+header .cal .btns button:nth-child(3){
+    background: red;
 }
