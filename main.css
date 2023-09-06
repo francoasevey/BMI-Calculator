@@ -64,11 +64,11 @@ header .speed .needle{
     border-bottom-right-radius: 5px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    top: 25px;
+    top: 15px;
     left: 53px;
     display: inline-block;
     transform-origin: bottom;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
     transition: all 5s ;
 }
 header .speed h3{
