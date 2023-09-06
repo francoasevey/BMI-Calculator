@@ -6,12 +6,12 @@ let weight = document.getElementById('weight');
 let height = document.getElementById('height');
 let male = document.getElementById('male');
 let female = document.getElementById('female');
-let speedmeter = document.getElementById('speedmeter');
-let needle = document.getElementById('needle');
+let speedmeter = document.getElementsByClassName('speedmeter');
+let needle = document.getElementsByClassName('needle');
 
 const male_fun = () =>{
     let c = weight.value / ((height.value/100) * 2);
-    male_value.innerText = parseInt(c) + ",00";
+    male_value.innerText = parseInt(c) + ".00";
     let needal_value = - 90 + parseInt(c) * 3.6;
     if (needle > 50) {
         needal_value = 50
@@ -34,7 +34,9 @@ const male_fun = () =>{
         male_btn.innerText = 'underweight'
         male_btn.style.background = "yellow"
     }
+    speedmeter[0].style.borderTop = border;
+    speedmeter[0].style.borderLeft = border;
 }
 male.addEventListener('click', ()=>{
-    male_fun()
+    male_fun();
 })
