@@ -68,7 +68,7 @@ header .speed .needle{
     left: 53px;
     display: inline-block;
     transform-origin: bottom;
-    transform: rotate(90deg);
+    transform: rotate(45deg);
     transition: all 5s ;
 }
 header .speed h3{

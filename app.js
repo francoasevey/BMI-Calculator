@@ -12,6 +12,29 @@ let needle = document.getElementById('needle');
 const male_fun = () =>{
     let c = weight.value / ((height.value/100) * 2);
     male_value.innerText = parseInt(c) + ",00";
-    let needal_value =
+    let needal_value = - 90 + parseInt(c) * 3.6;
+    if (needle > 50) {
+        needal_value = 50
+    } else if (needle <= -1){
+        needal_value = 1; 
+    }
+    needle[0].style.transform = ` rotate(${needal_value}deg)`;
+    let border = '13px solid #000';
+
+    if (parseInt(c) >= 18 && parseInt(c) <= 25) {
+        border = '13 px yellowgreen';
+        male_btn.innerText = 'Normal'
+        male_btn.style.background = "yellowgreen"
+    } else  if (25 < parseInt(c)) {
+        border = '13 px solid red';
+        male_btn.innerText = 'Overweight'
+        male_btn.style.background = "red"
+    } else {
+        border = '13 px solid yellow';
+        male_btn.innerText = 'underweight'
+        male_btn.style.background = "yellow"
+    }
 }
-male_fun()
+male.addEventListener('click', ()=>{
+    male_fun()
+})
