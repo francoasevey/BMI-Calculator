@@ -12,6 +12,9 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'poppins', sans-serif;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
 }
 header{
     width: 70%;

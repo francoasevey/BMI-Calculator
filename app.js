@@ -40,3 +40,36 @@ const male_fun = () =>{
 male.addEventListener('click', ()=>{
     male_fun();
 })
+
+const female_fun = () =>{
+    let c = weight.value / ((height.value/100) * 2);
+    female_value.innerText = parseInt(c) + ".00";
+    let needal_value = - 90 + parseInt(c) * 3.6;
+    if (needle > 50) {
+        needal_value = 50
+    } else if (needle <= -1){
+        needal_value = 1; 
+    }
+    needle[1].style.transform = ` rotate(${needal_value}deg)`;
+    let border = '13px solid #000';
+
+    if (parseInt(c) >= 18 && parseInt(c) <= 23) {
+        border = '13px solid yellowgreen';
+        female_btn.innerText = 'Normal'
+        female_btn.style.background = "yellowgreen"
+    } else  if (23 < parseInt(c)) {
+        border = '13px solid red';
+        female_btn.innerText = 'Overweight'
+        female_btn.style.background = "red"
+    } else {
+        border = '13px solid yellow';
+        female_btn.innerText = 'underweight'
+        female_btn.style.background = "yellow"
+    }
+    speedmeter[1].style.borderTop = border;
+    speedmeter[1].style.borderLeft = border;
+}
+
+female.addEventListener('click', ()=>{
+    female_fun();
+})
