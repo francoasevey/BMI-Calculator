@@ -22,15 +22,15 @@ const male_fun = () =>{
     let border = '13px solid #000';
 
     if (parseInt(c) >= 18 && parseInt(c) <= 25) {
-        border = '13 px yellowgreen';
+        border = '13px solid yellowgreen';
         male_btn.innerText = 'Normal'
         male_btn.style.background = "yellowgreen"
     } else  if (25 < parseInt(c)) {
-        border = '13 px solid red';
+        border = '13px solid red';
         male_btn.innerText = 'Overweight'
         male_btn.style.background = "red"
     } else {
-        border = '13 px solid yellow';
+        border = '13px solid yellow';
         male_btn.innerText = 'underweight'
         male_btn.style.background = "yellow"
     }
